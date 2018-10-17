@@ -1,0 +1,227 @@
+body {
+    background-color: #ebebeb;
+    margin: 0;
+    padding:0;
+}
+
+.navbar {
+    background-color: white;
+    height: 80px;
+    margin: 0px;
+    padding: 0;
+    position: static;
+}
+
+.navbar-header {
+    background-color: #3ebbc1;
+    color:white;
+    font-family: Georgia, serif;
+    font-size: 35px;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: static;
+
+}
+
+/* this applied to most of the p text */
+.text {
+
+    display: inline;
+    margin: 10px;
+    position: relative;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar-menu {
+    color:black;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+/* this was the dropdown alternative menu for the @media portion when screen size changes */
+.icon {
+    display: none;
+    position: fixed;
+    color: white;
+
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    color:black;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+   
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+
+.container {
+    color: #3ebbc1;
+    background-color: white;
+    font-family: Georgia, serif;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 30px;
+
+
+}    
+
+
+.box1 {
+
+    background-color: white;
+    color: #3ebbc1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 30px;
+    padding-bottom: 0px;
+
+}
+
+.image {
+
+    position: sticky;
+    overflow: hidden;
+
+}
+
+.bodytext {
+
+    color:black;
+    font-size:16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    word-wrap: normal;
+
+
+}
+
+.box2 {
+
+    background-color: white;
+    color: #3ebbc1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 30px;
+
+}
+.list-unstyled {
+    display:inline-flex
+    padding: 0px;
+    margin: 0 auto;
+    background: white;
+    text-align:center;
+}
+
+.border {
+    border:solid;
+    border-color: #3ebbc1;
+    border-width: 3px;
+}
+
+table {
+    overflow-y: hidden;
+    color:black;
+    background-color: white;
+    font-size:16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    word-wrap: normal;
+
+}
+
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align-last: center;
+    font-size: 14px;
+    padding: 15px;
+    background-color: gray;
+    color: white;
+    border-top-width: 10px;
+    border-top-color: #3ebbc1;
+    border-top-style: solid;
+    margin-top: 100px;
+    
+}
+
+@media (max-width:768px) {
+
+/* struggled with getting the navbar to display for small screens like shown in the instructions but I was able to hide it and find the hamburger icon */
+
+    span.icon {
+        display:block;
+        padding: 30px;
+        float: right;
+        position: relative;
+        margin-right: 100px;
+        margin-top: -65px;
+        padding: 10px;
+        color: white;
+        border-style: solid;
+        border-color: white;
+        border-width: thick;
+        box-sizing: border-box;
+        border-radius: 10px;
+        
+    }
+    span.text {
+        display:none
+    }
+
+
+    .container {
+        margin-bottom: 120px;
+     }}
+@media (max-width:1000px){
+     .box1{
+        max-width: max-content;
+        margin-bottom: 50px;
+        
+     }
+
+    footer {
+        max-width: max-content;
+
+        
+     }
+}
+
