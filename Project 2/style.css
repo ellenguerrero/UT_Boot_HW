@@ -1,0 +1,187 @@
+html {
+    background-color:#F0DB4F;
+}
+
+.body {
+    background-color:#F0DB4F;
+}
+
+#head1 {
+    text-align: left;
+    color:#323330;
+    font-size: 100px;
+    margin-left: 0px;
+    font-weight:bolder;
+}
+
+#con1 {
+    margin: 10px;
+}
+
+.nav-flex-column {
+}
+
+.nav-item {
+    background-color: #F0DB4F;
+    font-family:'Open Sans Condensed', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;
+    color: #323330;
+    position: static;
+    padding:10px;
+}
+
+
+#nav-sidebar a:link, a:visited {
+    color: #323330;
+    text-decoration: none;
+}
+
+.nav-item a.nav-link:hover {
+    color:white;
+    background-color:#323330;
+    text-decoration:none;
+    padding: 5px;
+    display: block;
+}
+
+#back-to-home a:link, a:visited{
+    color: #323330;
+    text-decoration: none;
+    font-family:'Open Sans Condensed', sans-serif;
+    font-size: 25px;
+    margin-right:50px;
+    font-weight: bold;
+    text-align: right;
+    color: #323330;
+    position: static;
+    padding:10px;
+}
+
+
+#top {
+    margin-top: -10px;
+    font-family:'Open Sans Condensed', sans-serif;
+}
+
+#head2 {
+    font-weight: 900;
+    font-size: 50px;
+}
+
+#p0 {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 30px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#p1 {
+font-family: 'Open Sans Condensed', sans-serif;
+
+}
+
+
+#track-box-1 {
+    padding: 15px;
+    color: #323330;
+    border: white 10px;
+    text-align: left;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+#track-box-2 {
+    color: #323330;
+   
+}
+
+#event-header-1 {
+    color:#323330;
+    text-align: left;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+#event-header-2 {
+    color:white;
+    text-align: left;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 25px;
+}
+
+
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; 
+    vertical-align: top;
+}
+.svg-content-responsive {
+    display: inline-block;
+    position: absolute;
+    top: 100px;
+    left: 75px;
+}
+
+
+.section {
+    padding: 10px;
+    padding-left: 15px;
+  }
+  .section input[type="checkbox"]
+  {
+    display: none;
+  }
+  .container {
+    margin-bottom: -5px;
+  }
+  .container label {
+    position: relative;
+  }
+
+/* Base styles for spans */
+.container span::before,
+.container span::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.container span.checkbox::before {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    left: -25px;
+    box-sizing: border-box;
+    border: 3px solid transparent;
+    transition: border-color .2s;
+  }
+  .container span.checkbox:hover::before {
+    border: 3px solid #323330;
+  }
+  
+  .container span.checkbox::after {
+    content: '\f00c';
+    font-family: 'FontAwesome';
+    left: -25px;
+    top: 2px;
+    color: transparent;
+    transition: color .2s;
+
+  }
+
+
+  input[type="checkbox"]:checked + label span.checkbox::after {
+    color: white;
+    background-color: #323330;
+  }
